@@ -1,0 +1,21 @@
+<form class="container mt-5" method="post" action="/account/delete">
+    <h1 class="text-left">
+        <span class="far fa-trash-alt" style="color:black"></span> Delete
+    </h1>
+    {{#if content}}
+     <input type="hidden" name="id" value="{{content.id}}" />
+    <div class="bg-dark mt-3">
+        <div class="row pl-2">
+            <div class=" col-sm-12">
+                <h5>
+                    {{#each content.tags}}
+                    <span class="badge badge-dark py-2 mt-1">{{this}}</span>
+                    {{/each}}
+                </h5>
+            </div>
+        </div>
+        <pre><code>{{content.snippet}}</code></pre>
+    </div>
+    {{/if}}
+    <button type="submit" class="btn btn-primary">Delete</button>
+</form>

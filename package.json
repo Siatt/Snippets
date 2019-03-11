@@ -1,0 +1,40 @@
+{
+  "name": "exam_2",
+  "version": "1.0.0",
+  "description": "Exam 2",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app",
+    "lint": "standard | snazzy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Siatt/Snippets"
+  },
+  "author": "Lucas Sjöqvist",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Siatt/Snippets/issues"
+  },
+  "homepage": "https://github.com/Siatt/Snippets#readme",
+  "dependencies": {
+    "bcrypt": "^3.0.4",
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.4",
+    "csurf": "^1.9.0",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "express-hbs": "^2.0.2",
+    "express-session": "^1.15.6",
+    "express-validator": "^5.3.1",
+    "helmet": "^3.15.1",
+    "highlightjs": "^9.12.0",
+    "mongoose": "^5.4.13"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10",
+    "snazzy": "^8.0.0",
+    "standard": "^12.0.1"
+  }
+}

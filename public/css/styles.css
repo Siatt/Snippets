@@ -1,0 +1,27 @@
+html, body {
+     font-family: 'Roboto', sans-serif;
+  } 
+header {
+    text-align: center;
+}
+textarea {
+    white-space: pre-wrap;
+}
+.badge {
+    font-weight: 5;
+}
+.fa-edit {
+    color: white;
+  }
+.fa-trash-alt {
+    color: white;
+}
+html, body {
+    height: 100%;
+}
+
+  
+  
+.error-template {padding: 40px 15px;text-align: center;}
+.error-actions {margin-top:15px;margin-bottom:15px;}
+.error-actions .btn { margin-right:10px; }

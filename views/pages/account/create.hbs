@@ -1,0 +1,25 @@
+
+<form class="container mt-5" action="create" method="POST">
+    <h1>Create</h1>
+    <div class="row">
+        <div class="form-group col-lg-3">
+            <label for="tagsInput">Tags</label>
+            <input class="form-control" id="tagsInput" type="text" name="tags"  placeholder="java,bubble sort" autocomplete="off" required>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-lg-12">
+            <h4><label for="snippetInput">Snippet</label></h4>
+            <textarea class="form-control" id="snippetInput" rows="20"  name="snippet"  style=" resize: none"  required></textarea>
+        </div>
+    </div>
+        <div class="row">
+        <div class="form-group col-lg-3">
+           <button type="submit" class="btn btn-primary">Save</button>
+        </div>
+    </div>
+{{#if inputs}}
+    <p>Username: {{inputs.username}}</p>
+    <p>Password: {{inputs.password}}</p>
+{{/if}}
+</form>

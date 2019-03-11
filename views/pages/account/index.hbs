@@ -1,0 +1,22 @@
+<div>
+    <h1 class="text-left">{{user.username}} Snippets</h1>
+    <a class="btn btn-primary" href="/account/create" role="button">Create</a>
+    {{#each snippets}}
+    <div class="bg-dark mt-3">
+        <div class="row pl-2">
+            <div class=" col-sm-11">
+                <h5>
+                    {{#each this.tags}}
+                    <span class="badge badge-dark py-2 mt-1">{{this}}</span>
+                    {{/each}}
+                </h5>
+            </div>
+            <div class="col-sm-0 mt-2 ml-2">
+                <a href="/account/edit/{{this._id}}" class="mr-3"><span class="far fa-edit"></span></a>
+                <a href="/account/delete/{{this._id}}" class="mt-4"><span class="far fa-trash-alt"></span></a>
+            </div>
+        </div>
+        <pre><code>{{this.snippet}}</code></pre>
+    </div>
+    {{/each}}
+</div>

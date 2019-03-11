@@ -1,0 +1,21 @@
+{{#if content}}
+<div>
+    {{#each content}}
+    <h2 class="text">{{this.username}}</h2>
+    {{#each this.snippets}}
+    <div class="bg-dark mt-3">
+        <div class="row pl-2">
+            <div class="col-sm-11">
+                <h5>
+                    {{#each this.tags}}
+                    <span class="badge badge-dark py-2 mt-1">{{this}}</span>
+                    {{/each}}
+                </h5>
+            </div>
+        </div>
+        <pre><code>{{this.snippet}}</code></pre>
+    </div>
+    {{/each}}
+    {{/each}}
+</div>
+{{/if}}

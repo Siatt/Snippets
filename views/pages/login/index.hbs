@@ -1,0 +1,24 @@
+<form class="container mt-5" action="/login" method="POST">
+<h1 class="text-center">Login</h1>
+    <div class="row justify-content-center">
+        <div class="form-group col-lg-3">
+            <label for="usernameInput">Username</label>
+            <input class="form-control" id="usernameInput" type="text" name="username"  placeholder="Username" autocomplete="off" required>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="form-group col-lg-3">
+            <label for="passwordInput">Password</label>
+            <input type="password" class="form-control" id="passwordInput"  name="password" type="password" placeholder="Password" autocomplete="off" required>
+        </div>
+    </div>
+        <div class="row justify-content-center">
+        <div class="form-group col-lg-3">
+           <button type="submit" class="btn btn-primary">Sign In</button>
+        </div>
+    </div>
+{{#if inputs}}
+    <p>Username: {{inputs.username}}</p>
+    <p>Password: {{inputs.password}}</p>
+{{/if}}
+</form>
